@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let age = +prompt("Ведите Ваш возраст");
+      let tehnology = prompt(" Ведеите 1 или 2 . 1 - Java Script . 2 - C#");
+      let expirience = prompt("Опыт работы в годах");
+
+
+      let abuit = age > 18 ? "Совершеннолетний" : "Несовершеннолетний";
+
+      let spezializeihon = tehnology == 1 ? "Фронтенд"  : "Бекенд";
+
+      if (expirience == 0){
+          pozition = "Без опыта работы";
+      }
+      else if (expirience > 0 && expirience > 1.5){
+          pozition = "Junior";
+      }
+      else if  (expirience > 1.5 && expirience > 3){
+          pozition = "Middle";
+      }
+      else if (expirience > 3){
+          pozition = "Senior";
+      }
+      else{
+          pozition = "error";
+      }
+
+      alert(`${abuit} \r\n ${spezializeihon} \r\n ${expirience}`);
+    </script>
+  </body>
+</html>
